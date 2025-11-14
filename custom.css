@@ -103,41 +103,27 @@ h2 {
 
 .slider {
     width: 90%;
-    /* Ancho máximo para que no sea gigante en PC */
-    max-width: 450px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 24px;
-    background-color: #000;
-    /* Proporción SIEMPRE vertical, ideal para tus fotos */
-    aspect-ratio: 4 / 5;
-}
-
-/* Ya no necesitamos la @media query, la hemos borrado */
-
-.slider {
-    width: 90%;
     max-width: 400px;
     margin: auto;
     overflow: hidden;
-    border-radius: 24px;
-    background-color: #5D3A6B;
+    border-radius: 50px;
+    background-color: #000000;
     aspect-ratio: 3 / 4;
 }
 
 .slider ul {
     display: flex;
     padding: 0;
-    /* 1. CAMBIO: Ancho total para 22 fotos */
-    width: 2200%; /* 100% x 22 fotos */
+    /* 1. CAMBIO: Ancho total para 45 fotos */
+    width: 4500%; /* (100% x 45 fotos) */
     height: 100%;
-    /* 2. CAMBIO: Más tiempo para que se vean todas */
-    animation: cambio 60s infinite alternate linear;
+    /* 2. CAMBIO: Más tiempo para 45 fotos */
+    animation: cambio 90s infinite alternate linear;
 }
 
 .slider li {
     /* 3. CAMBIO: Ancho individual para cada foto */
-    width: 4.545%; /* 100% / 22 fotos */
+    width: 2.222%; /* (100% / 45 fotos) */
     height: 100%;
     list-style: none;
 }
@@ -149,52 +135,98 @@ h2 {
     object-position: center;
 }
 
-/* 4. CAMBIO: La animación ahora tiene 22 pasos */
+/* 4. CAMBIO: La animación actualizada con 45 pasos */
 @keyframes cambio {
     /* Foto 1 */
-    0%, 3.5% { margin-left: 0; }
+    0%, 1.8% { margin-left: 0; }
     /* Foto 2 */
-    4%, 7.5% { margin-left: -100%; }
+    2.2%, 4.0% { margin-left: -100%; }
     /* Foto 3 */
-    8%, 11.5% { margin-left: -200%; }
+    4.4%, 6.2% { margin-left: -200%; }
     /* Foto 4 */
-    12%, 15.5% { margin-left: -300%; }
+    6.6%, 8.4% { margin-left: -300%; }
     /* Foto 5 */
-    16%, 19.5% { margin-left: -400%; }
+    8.8%, 10.6% { margin-left: -400%; }
     /* Foto 6 */
-    20%, 23.5% { margin-left: -500%; }
+    10.8%, 12.6% { margin-left: -500%; }
     /* Foto 7 */
-    24%, 27.5% { margin-left: -600%; }
+    12.8%, 14.6% { margin-left: -600%; }
     /* Foto 8 */
-    28%, 31.5% { margin-left: -700%; }
+    14.8%, 16.6% { margin-left: -700%; }
     /* Foto 9 */
-    32%, 35.5% { margin-left: -800%; }
+    16.8%, 18.6% { margin-left: -800%; }
     /* Foto 10 */
-    36%, 39.5% { margin-left: -900%; }
+    18.8%, 20.6% { margin-left: -900%; }
     /* Foto 11 */
-    40%, 43.5% { margin-left: -1000%; }
+    20.8%, 22.6% { margin-left: -1000%; }
     /* Foto 12 */
-    44%, 47.5% { margin-left: -1100%; }
+    22.8%, 24.6% { margin-left: -1100%; }
     /* Foto 13 */
-    48%, 51.5% { margin-left: -1200%; }
+    24.8%, 26.6% { margin-left: -1200%; }
     /* Foto 14 */
-    52%, 55.5% { margin-left: -1300%; }
+    26.8%, 28.6% { margin-left: -1300%; }
     /* Foto 15 */
-    56%, 59.5% { margin-left: -1400%; }
+    28.8%, 30.6% { margin-left: -1400%; }
     /* Foto 16 */
-    60%, 63.5% { margin-left: -1500%; }
+    30.8%, 32.6% { margin-left: -1500%; }
     /* Foto 17 */
-    64%, 67.5% { margin-left: -1600%; }
+    32.8%, 34.6% { margin-left: -1600%; }
     /* Foto 18 */
-    68%, 71.5% { margin-left: -1700%; }
+    34.8%, 36.6% { margin-left: -1700%; }
     /* Foto 19 */
-    72%, 75.5% { margin-left: -1800%; }
+    36.8%, 38.6% { margin-left: -1800%; }
     /* Foto 20 */
-    76%, 79.5% { margin-left: -1900%; }
+    38.8%, 40.6% { margin-left: -1900%; }
     /* Foto 21 */
-    80%, 83.5% { margin-left: -2000%; }
+    40.8%, 42.6% { margin-left: -2000%; }
     /* Foto 22 */
-    84%, 100% { margin-left: -2100%; }
+    42.8%, 44.6% { margin-left: -2100%; }
+    /* Foto 23 */
+    44.8%, 46.6% { margin-left: -2200%; }
+    /* Foto 24 */
+    46.8%, 48.6% { margin-left: -2300%; }
+    /* Foto 25 */
+    48.8%, 50.6% { margin-left: -2400%; }
+    /* Foto 26 */
+    50.8%, 52.6% { margin-left: -2500%; }
+    /* Foto 27 */
+    52.8%, 54.6% { margin-left: -2600%; }
+    /* Foto 28 */
+    54.8%, 56.6% { margin-left: -2700%; }
+    /* Foto 29 */
+    56.8%, 58.6% { margin-left: -2800%; }
+    /* Foto 30 */
+    58.8%, 60.6% { margin-left: -2900%; }
+    /* Foto 31 */
+    60.8%, 62.6% { margin-left: -3000%; }
+    /* Foto 32 */
+    62.8%, 64.6% { margin-left: -3100%; }
+    /* Foto 33 */
+    64.8%, 66.6% { margin-left: -3200%; }
+    /* Foto 34 */
+    66.8%, 68.6% { margin-left: -3300%; }
+    /* Foto 35 */
+    68.8%, 70.6% { margin-left: -3400%; }
+    /* Foto 36 */
+    70.8%, 72.6% { margin-left: -3500%; }
+    /* Foto 37 */
+    72.8%, 74.6% { margin-left: -3600%; }
+    /* Foto 38 */
+    74.8%, 76.6% { margin-left: -3700%; }
+    /* Foto 39 */
+    76.8%, 78.6% { margin-left: -3800%; }
+    /* Foto 40 */
+    78.8%, 80.6% { margin-left: -3900%; }
+    /* Foto 41 */
+    80.8%, 82.6% { margin-left: -4000%; }
+    /* Foto 42 */
+    82.8%, 84.6% { margin-left: -4100%; }
+    /* Foto 43 */
+    84.8%, 86.6% { margin-left: -4200%; }
+    /* Foto 44 */
+    86.8%, 88.6% { margin-left: -4300%; }
+    /* Foto 45 */
+    88.8%, 100% { margin-left: -4400%; }
 }
 
 /* Animación para un pulso sutil y elegante */
@@ -218,7 +250,7 @@ h2 {
 
   .loader {
     border: 8px solid #f3f3f320; /* Borde gris claro transparente */
-    border-top: 8px solid #FF69B4; /* Borde rosa (tu primary-pink) */
+    border-top: 8px solid #000000; /* Borde rosa (tu primary-pink) */
     border-radius: 50%;
     width: 80px;
     height: 80px;
